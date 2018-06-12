@@ -1,3 +1,4 @@
+// Use the Cache API to cache all main files
 self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open('cache-v1').then(function(cache) {
@@ -24,6 +25,7 @@ self.addEventListener('install', function(event) {
     );
 });
 
+// Use Fetch to utilize cached images or route the request
 self.addEventListener('fetch', function(event) {
     event.respondWith(
         caches.match(event.request).then(function(response) {
