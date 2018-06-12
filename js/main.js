@@ -162,7 +162,7 @@ createRestaurantHTML = (restaurant) => {
   // Added in the alt attrigute to images used with DB elements
   image.alt = DBHelper.restaurantAlt(restaurant);
   li.append(image);
-
+  
   const name = document.createElement('h1');
   name.innerHTML = restaurant.name;
   li.append(name);
