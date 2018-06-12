@@ -1,7 +1,13 @@
 @charset "utf-8";
-/* CSS Document */
 
 
+/* 
+Adding fluid breakpoints at 450-451 pixels and 775-776 pixels
+"Mobile" (max 450) view is under 450 and does not use any grid
+"Tablet" (max 775) view introduces flexgrid with wide listings
+"Desktop" retains flexgrid with 'regular' sized listings
+*/
+/* Mobile */
 @media screen and (max-width: 450px) {
   select {
     width: 90%;
@@ -18,7 +24,8 @@
     background-color: #fff;
     border: 2px solid #ccc;
     font-family: Arial,sans-serif;
-    text-align: left;    
+    text-align: left;   
+    margin-bottom: 15px; 
   }
   #restaurants-list .restaurant-img {
     background-color: #ccc;
@@ -27,7 +34,7 @@
     max-width: 100%;
   }  
 }
-
+/* Tablet */
 @media screen and (min-width: 451px) and (max-width: 775px) {
   ul {
     display: flex;
@@ -55,8 +62,7 @@
     min-width: 100%;
   }    
 }
-
-
+/* Desktop */
 @media screen and (min-width: 776px) {
   ul {
       display: flex;
@@ -85,7 +91,7 @@
     }    
 }
 
-
+/* Regular CSS is below this line. */
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
