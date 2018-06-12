@@ -154,8 +154,10 @@ class DBHelper {
     return (`/img/${restaurant.photograph}`);
   }
 
+
+  // Created an alt attribute to populate with the image for accessibility
   static restaurantAlt(restaurant) {
-    return (`${restaurant.name} with ${restaurant.cuisine_type} cuisine.`);
+    return (`The ${restaurant.name} restaurant featuring ${restaurant.cuisine_type} cuisine.`);
   }
 
   /**
