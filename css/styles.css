@@ -269,7 +269,7 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 @media screen and (max-width: 750px) {
-  
+  #breadcrumb {width:100%;}
   .inside #map {
     width: 100%;
   }
